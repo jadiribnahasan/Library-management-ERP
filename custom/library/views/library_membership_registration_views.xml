@@ -1,0 +1,21 @@
+<odoo>
+    <record id="library_membership_registration_action" model="ir.actions.act_window">
+        <field name="name">Library Membership Registration</field>
+        <field name="res_model">library.membership.registration</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="library_membership_registration_view_tree" model="ir.ui.view">
+        <field name="name">library.membership.registration.view.tree</field>
+        <field name="model">library.membership.registration</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="email"/>
+                <field name="contactNo"/>
+                <field name="address"/>
+                <field name="department"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

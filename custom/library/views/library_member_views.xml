@@ -1,0 +1,33 @@
+<odoo>
+    <record id="library_member_view_form_inherit" model="ir.ui.view">
+        <field name="name">library.member.view.form</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='type']" position='after'>
+                <field name="isMember"/>
+            </xpath>
+            <xpath expr="//field[@name='website']" position='attributes'>
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//field[@name='parent_id']" position='attributes'>
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//field[@name='vat']" position='attributes'>
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//field[@name='function']" position='attributes'>
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//field[@name='title']" position='attributes'>
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//field[@name='category_id']" position='attributes'>
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//page[@name='sales_purchases']" position='attributes'>
+                <attribute name="invisible">True</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
