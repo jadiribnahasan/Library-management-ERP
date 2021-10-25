@@ -1,0 +1,3 @@
+<odoo>
+    <menuitem id="library_membership_registration_menu_action" name="Registration" action="library_membership_registration_action" parent="library_book_menu"/>
+</odoo>
